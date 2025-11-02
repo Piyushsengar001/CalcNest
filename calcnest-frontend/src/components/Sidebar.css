@@ -1,0 +1,131 @@
+/* General Sidebar container - Matching Navbar/Footer gradient for consistency */
+.sidebar {
+  background: linear-gradient(135deg, #767678, #5c5c5e); /* Same purple gradient */
+  padding: 2rem 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Matching shadow */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  border-radius: 15px; /* Rounded corners for modern look */
+  position: sticky;
+  top: 1rem;
+  height: fit-content;
+  min-width: 250px;
+  transition: transform 0.3s ease;
+}
+
+.sidebar:hover {
+  transform: translateY(-5px); /* Subtle lift on hover */
+}
+
+/* Header section */
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid rgba(16, 16, 16, 0.3);
+  padding-bottom: 0.5rem;
+}
+
+.sidebar-title {
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-shadow: 2px 2px 6px rgba(160, 157, 157, 0.5);
+  letter-spacing: 1px;
+  background: linear-gradient(45deg, #d6d4d4, #d8d8da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.sidebar-decoration {
+  font-size: 1.5rem;
+  animation: sparkle 2s infinite alternate; /* Fun sparkle animation */
+}
+
+@keyframes sparkle {
+  0% { transform: scale(1); opacity: 0.8; }
+  100% { transform: scale(1.2); opacity: 1; }
+}
+
+/* List styles */
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-item {
+  margin-bottom: 1rem;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(248, 242, 242);
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1); /* Subtle background for depth */
+}
+
+.sidebar-link:hover {
+  background: linear-gradient(45deg, #f1f0f0, #c7c7c7); /* White-to-light-purple gradient */
+  color: #111112;
+  box-shadow: 0 0 20px rgba(17, 17, 17, 0.8); /* Glowing effect */
+  transform: scale(1.05) translateX(5px); /* Scale and slide for dynamism */
+}
+
+.sidebar-emoji {
+  font-size: 1.5rem;
+  margin-right: 0.75rem;
+  transition: transform 0.3s ease;
+}
+
+.sidebar-link:hover .sidebar-emoji {
+  transform: rotate(10deg); /* Fun rotation on hover */
+}
+
+.sidebar-text {
+  flex-grow: 1;
+}
+
+.sidebar-arrow {
+  font-size: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar-link:hover .sidebar-arrow {
+  opacity: 1; /* Reveal arrow on hover */
+}
+
+/* Footer section */
+.sidebar-footer {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  opacity: 0.8;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sidebar {
+    min-width: 200px;
+    padding: 1.5rem 1rem;
+  }
+  .sidebar-title {
+    font-size: 1.2rem;
+  }
+  .sidebar-link {
+    font-size: 1rem;
+    padding: 0.6rem 0.8rem;
+  }
+}

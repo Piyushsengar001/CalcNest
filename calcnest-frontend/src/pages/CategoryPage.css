@@ -1,0 +1,14 @@
+.category-page {
+  display: flex;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.calc-button {
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+}

@@ -1,0 +1,50 @@
+/* General Navbar container */
+.navbar {
+  background: linear-gradient(45deg, #767678, #5c5c5e);
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Inner container for better flex alignment */
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo styles */
+.navbar-logo {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.45);
+  letter-spacing: 3px;
+}
+
+/* Navigation menu styles */
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar-menu li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0.45rem 0.75rem;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for menu items */
+.navbar-menu li a:hover {
+  background-color: #d2d0d0;
+  color: #0b0b0b;
+  box-shadow: 0 0 15px rgba(76, 76, 76, 0.6);
+  transform: scale(1.05);
+}
